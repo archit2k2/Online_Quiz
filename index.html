@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Online Quiz</title>
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="abc">
+            <div class="title">
+                ONLINE QUIZ
+            </div>
+            <div class="content" id="abc">
+                <button class="btn btn-success btn-lg" onclick="Load(this)">Start Quiz</button>
+                <div class="xyz" id="ques-container">
+                    <div class="pqr" id="ques">
+                        <h3 id="h2">1. Question comes here</h3>
+                        <ul>
+                            <li>
+                                <input type="radio" name="answer" id="ans1" value="1" class="answer"/>
+                                <span id="option1">Abc</span>
+                            </li>
+                            <li>
+                                <input type="radio" name="answer" id="ans2" value="2" class="answer"/>
+                                <span id="option2">abc</span>
+                            </li>
+                            <li>
+                                <input type="radio" name="answer" id="ans3" value="3" class="answer"/>
+                                <span id="option3">abc</span>
+                            </li>
+                            <li>
+                                <input type="radio" name="answer" id="ans4" value="4" class="answer"/>
+                                <span id="option4">abc</span>
+                            </li>
+                        </ul>
+                        <div id="button">
+                            <button class="btn btn-success" id="inner_btn" onclick="loadQues(this)">Next</button>
+                            <button class="btn btn-success" id="inner_btn" onclick="score()">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="xyz" id="score-container">
+                    <div class="pqr" id="score">
+                        <p>
+                            <h3>Your Score</h3>
+                            <span id="marks"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="quiz.js"></script>
+</html>
